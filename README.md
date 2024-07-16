@@ -9,7 +9,7 @@ This project demonstrates the use of the Leaflet library with React to display m
 1. Clone the repository:
 
     ```bash
-    git clone <your-repository-url>
+    git clone [<your-repository-url>](https://github.com/JohnImril/leaflet-route.git)
     cd <your-repository-name>
     ```
 
