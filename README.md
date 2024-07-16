@@ -1,6 +1,10 @@
 # Leaflet Route
 
-[githubPages](https://johnimril.github.io/leaflet-route/)
+[Github Pages](https://johnimril.github.io/leaflet-route/)
+
+## Screenshot
+
+![App Screenshot](./assets/screenshot.png)
 
 ## Description
 
