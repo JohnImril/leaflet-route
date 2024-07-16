@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/leaflet-route/static/css/main.7019e454.css",
+    "main.js": "/leaflet-route/static/js/main.499cabd7.js",
+    "static/media/truck.svg": "/leaflet-route/static/media/truck.345a98e84cc54c2d939aa9af011fcd35.svg",
+    "index.html": "/leaflet-route/index.html",
+    "main.7019e454.css.map": "/leaflet-route/static/css/main.7019e454.css.map",
+    "main.499cabd7.js.map": "/leaflet-route/static/js/main.499cabd7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7019e454.css",
+    "static/js/main.499cabd7.js"
+  ]
+}
