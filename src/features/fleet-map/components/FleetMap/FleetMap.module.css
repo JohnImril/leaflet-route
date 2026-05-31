@@ -1,0 +1,32 @@
+.shell {
+	position: relative;
+	min-width: 0;
+	height: 100vh;
+}
+
+.map {
+	height: 100%;
+	width: 100%;
+	background: #dfe7df;
+}
+
+.popupLine {
+	display: block;
+	margin-top: 4px;
+}
+
+@media (max-width: 980px) {
+	.shell {
+		order: 1;
+		width: 100%;
+		min-width: 0;
+		height: var(--mobile-map-height);
+		overflow: hidden;
+	}
+}
+
+@media (max-width: 767px) {
+	.shell :global(.leaflet-top.leaflet-left) {
+		top: 112px;
+	}
+}

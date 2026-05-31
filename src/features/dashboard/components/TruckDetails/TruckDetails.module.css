@@ -1,0 +1,91 @@
+.section {
+	padding-top: 16px;
+	border-top: 1px solid #e5e7eb;
+}
+
+.section h2 {
+	margin: 0;
+	font-size: 15px;
+}
+
+.emptyState p {
+	margin: 10px 0 0;
+	color: #64748b;
+	font-size: 13px;
+	line-height: 1.45;
+}
+
+.heading {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 12px;
+	margin-bottom: 10px;
+}
+
+.heading span,
+.detailGrid span {
+	margin: 0;
+	color: #64748b;
+	font-size: 12px;
+}
+
+.detailGrid {
+	display: grid;
+	grid-template-columns: minmax(120px, 1fr) minmax(120px, 1fr);
+	gap: 9px 12px;
+	align-items: baseline;
+}
+
+.detailGrid strong {
+	text-align: right;
+	font-size: 13px;
+}
+
+.statusText,
+.riskText {
+	text-transform: capitalize;
+}
+
+.riskText.low,
+.statusText.onTime {
+	color: #15803d;
+}
+
+.riskText.medium,
+.statusText.delayed {
+	color: #b45309;
+}
+
+.riskText.high,
+.statusText.atRisk {
+	color: #dc2626;
+}
+
+.statusText.completed {
+	color: #475569;
+}
+
+.warningBox {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	margin-top: 12px;
+	padding: 10px;
+	border: 1px solid #fed7aa;
+	border-radius: 8px;
+	background: #fff7ed;
+	color: #9a3412;
+	font-size: 12px;
+}
+
+@media (max-width: 767px) {
+	.section {
+		padding-top: 12px;
+	}
+
+	.detailGrid {
+		grid-template-columns: minmax(94px, 0.85fr) minmax(0, 1.15fr);
+		gap: 7px 10px;
+	}
+}

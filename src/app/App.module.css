@@ -1,0 +1,23 @@
+.appShell {
+	--mobile-map-height: clamp(360px, 56vh, 520px);
+	display: grid;
+	grid-template-columns: minmax(360px, 420px) minmax(0, 1fr);
+	width: 100%;
+	min-height: 100vh;
+	overflow-x: hidden;
+	background: #f3f4f6;
+	color: #172033;
+}
+
+@media (max-width: 980px) {
+	.appShell {
+		grid-template-columns: 1fr;
+		grid-template-rows: var(--mobile-map-height) auto;
+	}
+}
+
+@media (max-width: 767px) {
+	.appShell {
+		--mobile-map-height: clamp(360px, 55vh, 500px);
+	}
+}
