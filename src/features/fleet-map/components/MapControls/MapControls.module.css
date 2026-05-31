@@ -1,0 +1,177 @@
+.controls {
+	position: absolute;
+	right: 18px;
+	top: 18px;
+	z-index: 600;
+	width: min(360px, calc(100% - 36px));
+	padding: 12px;
+	border: 1px solid rgb(148 163 184 / 35%);
+	border-radius: 8px;
+	background: rgb(255 255 255 / 94%);
+	box-shadow: 0 12px 28px rgb(15 23 42 / 16%);
+	backdrop-filter: blur(8px);
+}
+
+.desktopPanel,
+.mobilePanel {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.mobileStrip,
+.mobileDetails {
+	display: none;
+}
+
+.row {
+	display: flex;
+	gap: 8px;
+}
+
+.controls button,
+.controls select,
+.controls input,
+.controls summary,
+.mobileStrip span {
+	min-width: 0;
+	height: 34px;
+	border: 1px solid #cbd5e1;
+	border-radius: 7px;
+	background: #ffffff;
+	color: #172033;
+	font: inherit;
+	font-size: 13px;
+}
+
+.controls button,
+.controls summary,
+.mobileStrip span {
+	padding: 0 10px;
+	cursor: pointer;
+}
+
+.controls summary,
+.mobileStrip span {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+}
+
+.controls summary::-webkit-details-marker {
+	display: none;
+}
+
+.controls button:hover,
+.controls button.active,
+.controls summary:hover {
+	border-color: #2563eb;
+	background: #eff6ff;
+	color: #1d4ed8;
+}
+
+.active {
+	border-color: #2563eb;
+	background: #eff6ff;
+	color: #1d4ed8;
+}
+
+.controls .primary {
+	border-color: #1d4ed8;
+	background: #2563eb;
+	color: #ffffff;
+}
+
+.controls .primary:hover {
+	background: #1d4ed8;
+	color: #ffffff;
+}
+
+.segmented button {
+	flex: 1;
+}
+
+.field {
+	display: grid;
+	grid-template-columns: 82px 1fr;
+	align-items: center;
+	gap: 8px;
+	color: #64748b;
+	font-size: 12px;
+}
+
+.field select,
+.field input {
+	width: 100%;
+	padding: 0 8px;
+}
+
+@media (max-width: 767px) {
+	.controls {
+		left: 16px;
+		right: 16px;
+		top: 14px;
+		width: min(326px, calc(100% - 32px));
+		max-width: 326px;
+		padding: 8px;
+	}
+
+	.desktopPanel {
+		display: none;
+	}
+
+	.mobileStrip {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 8px;
+	}
+
+	.mobileStrip span {
+		color: #1d4ed8;
+		background: #eff6ff;
+	}
+
+	.mobileDetails {
+		display: block;
+		margin-top: 8px;
+	}
+
+	.mobileDetails summary {
+		width: 100%;
+	}
+
+	.mobileDetails[open] summary {
+		margin-bottom: 8px;
+	}
+
+	.mobilePanel {
+		gap: 8px;
+	}
+
+	.row {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+
+	.controls button {
+		padding: 0 6px;
+		font-size: 12px;
+		white-space: nowrap;
+	}
+
+	.field {
+		grid-template-columns: 64px minmax(0, 1fr);
+	}
+}
+
+@media (max-width: 380px) {
+	.controls button,
+	.controls select,
+	.controls input,
+	.controls summary,
+	.mobileStrip span {
+		height: 32px;
+		font-size: 12px;
+	}
+}

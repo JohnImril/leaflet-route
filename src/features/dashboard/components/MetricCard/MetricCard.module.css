@@ -1,0 +1,53 @@
+.card {
+	display: flex;
+	min-height: 64px;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 12px;
+	border: 1px solid #dbe1ea;
+	border-radius: 8px;
+	background: #f8fafc;
+}
+
+.card span {
+	margin: 0;
+	color: #64748b;
+	font-size: 12px;
+}
+
+.card strong {
+	font-size: 21px;
+	line-height: 1;
+}
+
+.good {
+	border-color: #bbf7d0;
+	background: #f0fdf4;
+}
+
+.warning {
+	border-color: #fde68a;
+	background: #fffbeb;
+}
+
+.danger {
+	border-color: #fecaca;
+	background: #fef2f2;
+}
+
+@media (max-width: 767px) {
+	.card {
+		min-height: 56px;
+		padding: 10px;
+	}
+
+	.card strong {
+		font-size: 19px;
+	}
+}
+
+@media (max-width: 399px) {
+	.card {
+		min-height: 54px;
+	}
+}
