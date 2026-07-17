@@ -41,7 +41,7 @@ Mobile and tablet captures are available in [`docs/screenshot-mobile.png`](./doc
 
 The project is split into small layers so the map is not responsible for all product logic:
 
-- `src/simulation/` contains static Cambridge road-like route presets, deterministic route assignment, seeded random, scenario config, ETA/delay/risk calculations and position updates.
+- `src/domain/fleet-simulation/` contains static Cambridge road-like route presets, deterministic route assignment, seeded random, scenario config, ETA/delay/risk calculations and position updates.
 - `src/features/fleet-map/` contains Leaflet rendering, truck markers, route lines, controls, legend and the simulation hook.
 - `src/features/dashboard/` contains metrics, truck list, selected truck details and activity feed UI.
 - `src/shared/` contains small formatting utilities shared by the map and dashboard components.
