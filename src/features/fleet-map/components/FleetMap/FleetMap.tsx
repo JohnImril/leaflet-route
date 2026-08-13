@@ -68,14 +68,14 @@ const MapViewportController: React.FC<MapViewportControllerProps> = ({
 			return;
 		}
 
-		const selectedTruck = selectedTruckRef.current;
+		const currentTruck = selectedTruckRef.current;
 
-		if (!selectedTruck || selectedTruckId === lastSelectedTruckIdRef.current) {
+		if (!currentTruck || selectedTruckId === lastSelectedTruckIdRef.current) {
 			return;
 		}
 
 		lastSelectedTruckIdRef.current = selectedTruckId;
-		const point = selectedTruck.points[selectedTruck.currentPointIndex];
+		const point = currentTruck.points[currentTruck.currentPointIndex];
 		map.panTo([point.lat, point.lng], { animate: true, duration: 0.4 });
 	}, [map, selectedTruckId]);
 

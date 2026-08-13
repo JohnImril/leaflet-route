@@ -40,7 +40,9 @@ const TruckList: React.FC<TruckListProps> = ({ routes, selectedTruckId, onSelect
 					>
 						<span className={styles.rowMain}>
 							<strong>{route.truckId}</strong>
-							<span className={cn(styles.statusBadge, statusClassName[route.status])}>{route.status}</span>
+							<span className={cn(styles.statusBadge, statusClassName[route.status])}>
+								{route.status}
+							</span>
 						</span>
 						<span className={styles.rowMeta}>
 							<span>{formatPercent(route.progressPercent)}</span>

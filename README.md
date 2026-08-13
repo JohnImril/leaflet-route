@@ -33,7 +33,7 @@ Mobile and tablet captures are available in [`docs/screenshot-mobile.png`](./doc
 - Vite
 - Leaflet
 - React Leaflet
-- ESLint
+- Oxlint
 - Prettier
 - Vitest
 
